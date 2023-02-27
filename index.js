@@ -55,8 +55,11 @@ const createClothe = function(type, color, size){
         size
     }
 };
-clothe = createClothe('ankara', 'blue', 'm')
+let clothe = createClothe('ankara', 'blue', 'm')
 console.log(clothe);
+//Using Obect.assign
+let clothe1 = Object.assign({}, clothe)
+console.log(clothe1);
 
 //Using Spread Syntax
 const clotheClone = {...clothe}
